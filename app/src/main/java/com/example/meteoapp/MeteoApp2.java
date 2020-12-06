@@ -1,14 +1,13 @@
 package com.example.meteoapp;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -19,23 +18,23 @@ import com.squareup.picasso.Picasso;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class MainActivity extends AppCompatActivity {
-    //Création d'objets graphique
-    ImageView imageViewIcone;
-    TextView textViewTemperature, textViewCondition;
+public class MeteoApp2 extends AppCompatActivity {
+
     EditText editText;
-    String url;
-    TextView meteoApp2;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        meteoApp2 = findViewById(R.id.meteoApp2);
-        meteoApp2.setOnClickListener(v -> {
-            Intent intent = new Intent(getApplicationContext(), MeteoApp2.class);//utiliation de la classe intent pour etre rediriger vers l'activité météoApp2
-            startActivity(intent);
+        setContentView(R.layout.activity_meteo_app2);
+        editText = findViewById(R.id.editText);
 
+
+        findViewById(R.id.button).setOnClickListener(v -> {
+           String ville= editText.getText().toString();
+            Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+            intent.putExtra("villeUse",ville);
+            startActivity(intent);
         });
 
     }
