@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 //Association des objets aux layout
-        imageViewIcone = findViewById(R.id.imageViewIcone);
+   /*     imageViewIcone = findViewById(R.id.imageViewIcone);
         textViewTemperature = findViewById(R.id.textViewTemperature);
         textViewCondition = findViewById(R.id.textViewCondition);
         editText = findViewById(R.id.editText);
@@ -63,6 +63,6 @@ public class MainActivity extends AppCompatActivity {
                         //Messsage en cas d'erreur
                     error -> Toast.makeText(this, "Erreur", Toast.LENGTH_SHORT).show());
             queue.add(stringRequest);
-        });
+        });*/
     }
 }
