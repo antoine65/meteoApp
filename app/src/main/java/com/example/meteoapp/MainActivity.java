@@ -34,7 +34,7 @@ import java.util.Locale;
 public class MainActivity extends AppCompatActivity {
     //Création d'objets graphique
     ImageView imageViewIcone;
-    TextView temperature, ville, date, pays, humidite;
+    TextView temperature, ville, date, pays, humidite, coucher, lever, vent;
     ImageView temps;
     String lien;
     LinearLayout meteoApp2;
@@ -53,6 +53,9 @@ public class MainActivity extends AppCompatActivity {
         temps = findViewById(R.id.temps);
         humidite = findViewById(R.id.humidite);
         meteoApp2 = findViewById(R.id.meteoApp2);
+        coucher = findViewById(R.id.coucher);
+        lever = findViewById(R.id.lever);
+        vent = findViewById(R.id.vent);
 
         meteoApp2.setOnClickListener(v ->{
             Intent intent = new Intent(getApplicationContext(), MeteoApp2.class);//utiliation de la classe intent pour etre rediriger vers l'activité météoApp2
@@ -125,7 +128,9 @@ public class MainActivity extends AppCompatActivity {
                         String laDate = current_condition.getString("date");
                         String condition = current_condition.getString("condition");
                         String lHumidite = current_condition.getString("humidity");
+                        String leVent = current_condition.getString("wnd_spd");
                         temperature.setText(tmp + "°C");
+                        vent.setText(leVent + "km/h");
                         date.setText("Date : " + laDate);
                         humidite.setText(lHumidite + " %");
                         Picasso.get().load(icone).into(temps);
@@ -134,8 +139,12 @@ public class MainActivity extends AppCompatActivity {
                         JSONObject city_info = jsonObject.getJSONObject("city_info");
                         String laVille = city_info.getString("name");
                         String lePays = city_info.getString("country");
+                        String leCoucher = city_info.getString("sunset");
+                        String leLever = city_info.getString("sunrise");
                         ville.setText("Ville : " + laVille);
                         pays.setText("" + lePays);
+                        coucher.setText(leCoucher +" h");
+                        lever.setText(leLever +" h");
 
 
                     } catch (JSONException e) {

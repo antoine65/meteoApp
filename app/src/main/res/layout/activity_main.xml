@@ -26,21 +26,23 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Toulouse"
-                android:textSize="24dp" />
+                android:textSize="24dp"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="20 April 2012, 20:08 PM"
-                android:textSize="14dp" />
+                android:textSize="14dp"
+                android:textStyle="bold"/>
         </LinearLayout>
 
 
         <LinearLayout
             android:id="@+id/overviewContainer"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="318dp"
             android:layout_centerInParent="true"
             android:orientation="vertical">
 
@@ -49,17 +51,18 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_gravity="center"
-                android:src="@drawable/ic_launcher_background" />
+                android:src="@drawable/meteo" />
 
             <TextView
                 android:id="@+id/temperature"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="144dp"
+                android:layout_height="67dp"
                 android:layout_gravity="center"
                 android:fontFamily="sans-serif-thin"
                 android:text="29°C"
-                android:textSize="90dp" />
-
+                android:textSize="60dp"
+                android:textStyle="bold" />
+            />
 
 
         </LinearLayout>
@@ -99,14 +102,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Sunrise"
+                        android:text="Lever"
                         android:textSize="12dp" />
 
                     <TextView
-                        android:id="@+id/sunrise"
+                        android:id="@+id/lever"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="06:40 AM"
+                        android:text="06:40 h"
                         android:textSize="14dp" />
                 </LinearLayout>
 
@@ -136,14 +139,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Sunset"
+                        android:text="coucher"
                         android:textSize="12dp" />
 
                     <TextView
-                        android:id="@+id/sunset"
+                        android:id="@+id/coucher"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="06:40 AM"
+                        android:text="17:40 h"
                         android:textSize="14dp" />
                 </LinearLayout>
 
@@ -173,15 +176,15 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Wind"
+                        android:text="Vent"
                         android:textSize="12dp" />
 
                     <TextView
-                        android:id="@+id/wind"
+                        android:id="@+id/vent"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="06:40 AM"
-                        android:textSize="14dp" />
+                        android:textSize="14dp"
+                        />
                 </LinearLayout>
             </LinearLayout>
 
@@ -207,7 +210,7 @@
                     <ImageView
                         android:layout_width="25dp"
                         android:layout_height="25dp"
-                        android:src="@drawable/pressure"
+                        android:src="@drawable/ic_baseline_flag_24"
                          />
 
                     <Space
