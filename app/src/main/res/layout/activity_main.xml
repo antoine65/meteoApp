@@ -37,7 +37,8 @@
                 android:layout_height="wrap_content"
                 android:text="20 April 2012, 20:08 PM"
                 android:textSize="14dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
         </LinearLayout>
 
 
@@ -63,7 +64,8 @@
                 android:fontFamily="sans-serif-thin"
                 android:text="29°C"
                 android:textSize="60dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
             />
 
 
@@ -105,14 +107,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Lever"
-                        android:textSize="12dp" />
+                        android:textSize="12dp"
+                        android:textColor="@color/white"/>
 
                     <TextView
                         android:id="@+id/lever"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="06:40 h"
-                        android:textSize="14dp" />
+                        android:textSize="14dp"
+                        android:textColor="@color/white"/>
                 </LinearLayout>
 
                 <Space
@@ -142,14 +146,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="coucher"
-                        android:textSize="12dp" />
+                        android:textSize="12dp"
+                        android:textColor="@color/white"/>
 
                     <TextView
                         android:id="@+id/coucher"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="17:40 h"
-                        android:textSize="14dp" />
+                        android:textSize="14dp"
+                        android:textColor="@color/white"/>
                 </LinearLayout>
 
                 <Space
@@ -163,7 +169,8 @@
                     android:background="#3CF1EBF1"
                     android:gravity="center"
                     android:orientation="vertical"
-                    android:padding="8dp">
+                    android:padding="8dp"
+                    android:textColor="@color/white">
 
                     <ImageView
                         android:layout_width="25dp"
@@ -179,14 +186,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Vent"
-                        android:textSize="12dp" />
+                        android:textSize="12dp"
+                        android:textColor="@color/white"/>
 
                     <TextView
                         android:id="@+id/vent"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="14dp"
-                        />
+                        android:textColor="@color/white"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -223,14 +231,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Pays"
-                        android:textSize="12dp" />
+                        android:textSize="12dp"
+                        android:textColor="@color/white"/>
 
                     <TextView
                         android:id="@+id/pays"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="06:40 AM"
-                        android:textSize="14dp" />
+                        android:text=""
+                        android:textSize="14dp"
+                        android:textColor="@color/white"/>
                 </LinearLayout>
 
                 <Space
@@ -260,14 +270,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Humidité"
-                        android:textSize="12dp" />
+                        android:textSize="12dp"
+                        android:textColor="@color/white"/>
 
                     <TextView
                         android:id="@+id/humidite"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="06:40 AM"
-                        android:textSize="14dp" />
+                        android:text=""
+                        android:textSize="14dp"
+                        android:textColor="@color/white"/>
                 </LinearLayout>
 
                 <Space
@@ -299,7 +311,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Choisir une ville"
-                        android:textSize="12dp" />
+                        android:textSize="12dp"
+                        android:textColor="@color/white"/>
 
                     <TextView
                         android:id="@+id/about"
