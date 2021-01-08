@@ -1,8 +1,10 @@
 package com.example.meteoapp;
 
+import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
 import android.content.Context;
+import android.content.Intent;
 import android.widget.RemoteViews;
 
 /**
@@ -16,7 +18,10 @@ public class MeteoWidget extends AppWidgetProvider {
         CharSequence widgetText = context.getString(R.string.appwidget_text);
         // Construct the RemoteViews object
         RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.meteo_widget);
-        views.setTextViewText(R.id.appwidget_text, widgetText);
+
+        Intent intent= new Intent(context, MainActivity.class);
+        PendingIntent pendingintent=PendingIntent.getActivity(context,0,intent,0);
+        views.setOnClickPendingIntent(R.id.accesApp, pendingintent);
 
         // Instruct the widget manager to update the widget
         appWidgetManager.updateAppWidget(appWidgetId, views);
