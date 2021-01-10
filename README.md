@@ -36,9 +36,12 @@ Cette page est accessible à partir du boutton "choisir une ville" de la page d'
 # 3.Widget
 
 L'application a notamment un widget avec une image en fond.
+
+
 ![image](https://user-images.githubusercontent.com/72809834/104129671-5787f280-536d-11eb-883c-65b943d0b9dd.png)
 
 Nous pouvons donc y avoir accès depuis l'écran d'accueil du téléphone mais aussi dans le menu des différents widgets de votre appareil.
+
 ![image](https://user-images.githubusercontent.com/72809834/104129677-6ec6e000-536d-11eb-9e0a-5022982a94f6.png)
 
 En le sélectionnant longtemps, nous pouvons soit le supprimé, soit le redimensionner en fonction de l'envie de l'utilisateur.
