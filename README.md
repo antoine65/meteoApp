@@ -31,3 +31,9 @@ Cette page est accessible à partir du boutton "choisir une ville" de la page d'
 
 
 ![image](https://user-images.githubusercontent.com/72809834/104129601-daf51400-536c-11eb-9a5c-19c67ebeffc1.png)
+
+
+# 3.Widget
+
+
+
